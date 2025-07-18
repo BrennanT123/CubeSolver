@@ -1,0 +1,52 @@
+https://kociemba.org/cube.htm
+
+
+Anaconda commands for venv
+
+
+View conda environments 
+
+conda info --envs
+
+Create conda environemnt 
+
+conda create --name <name goes here>
+
+Or you can do 
+
+conda create -n myenv python=3.11 pip 
+
+To specify the python version and install pip by default
+
+Enter environment conda activate <env name>
+
+To install pypy3 vs traditional CPython
+
+conda install pypy3
+
+Environment names for this project 
+
+cubeSolverPypy3 (for optimal solutions, takes like 15 minutes to run so dont do this one)
+
+CPython version (for non optimal solutions)
+cubeSolverKociemba 
+
+
+Cube notation order is URFDLB
+Conversion to my color scheme/orentation 
+U  = Yellow
+R = Orange
+F = Green
+D = White
+L = Red
+B = Blue
+
+
+To set up arduino, start python program first then click the reset button on arduino
+
+Stepper stepper1 = Stepper(stepsPerRevolution, 2, 3); //F
+Stepper stepper2 = Stepper(stepsPerRevolution, 4, 5);  //L
+Stepper stepper3 = Stepper(stepsPerRevolution, 6, 7); //B
+Stepper stepper4 = Stepper(stepsPerRevolution, 8, 9); //R
+Stepper stepper5 = Stepper(stepsPerRevolution, 10, 11); //D
+Stepper stepper6 = Stepper(stepsPerRevolution, 38, 40); //U
